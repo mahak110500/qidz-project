@@ -1,0 +1,14 @@
+section#breadcrumb{
+    background: #f2f2f2;
+    padding: 10px 0px;
+    }
+    .breadcrumb_inner a {
+        color: #333;
+        font-weight: 600;
+    }
+    .breadcrumb_inner span {
+        color: #f54848;
+        font-weight: 600;
+        font-family: 'Segoe UI';
+        font-size: 14px;
+    }

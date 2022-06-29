@@ -1,0 +1,32 @@
+<section id="event_category" class="event_category">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="event_cat_section">
+                    <div class="event_cat_section_inner">
+                        <div class="events_main_heading">
+                            <h1>Get Inspiration For Your Next Outing</h1>
+                            <a href="#">See All</a>
+                        </div>
+                        <div class="event_cat_carousel" >
+                            <owl-carousel-o [options]="customOptions">
+                                <ng-container *ngFor="let slide of dynamicSlides">
+                                    <ng-template carouselSlide [id]="slide.id">
+                                        <div class="event_image" style="margin: 10px"><a href="#"><img src="{{slide.src}}" alt="ad_01">
+                                                <div class="event_heading"
+                                                [ngStyle]="{'background-color': slide.id == '1' ? '#DAA520' : bgcolor(slide.id)}">{{slide.title}}
+                                                <!-- [ngStyle]="{'background-color':slide.id == '1' ? 'yellow' : 'purple' }">{{slide.title}} -->
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </ng-template>
+                                </ng-container>
+                            </owl-carousel-o>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

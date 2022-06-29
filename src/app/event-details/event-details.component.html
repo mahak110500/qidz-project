@@ -1,0 +1,31 @@
+<app-home-section (loadedFeature)="tohomePage($event)" (click)="toTogglehomepage($event)"></app-home-section>
+<main id="main">
+   <!-- ======= Filter Section start ======= -->
+   <div id="page">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8">
+               <div class="events_details_main">
+                  <div class="events_details_inner">
+                     <app-banner-event></app-banner-event>
+                     <app-event-content></app-event-content>
+                  </div>
+                  
+                  <app-ad-banner></app-ad-banner>
+                  <app-activity-section></app-activity-section>
+                  <app-activity-description></app-activity-description>
+                  <app-reviews></app-reviews>
+                </div>
+            </div>
+            <div class="col-md-4">
+               <div class="events_rt_sidebar">
+                  <div class="events_rt_inner">
+                     <app-share-widget></app-share-widget>
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+   </div>
+</main>
